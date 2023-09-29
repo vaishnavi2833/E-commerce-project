@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Smartphone XYZ",
+        "price": 499.99,
+        "descripton": "A powerful and feature-rich smartphone.",
+        "ratings": 4.8,
+        "images": [
+            {
+                "public_id": "xyz456",
+                "url": "https://example.com/images/phone_image.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Tech Store",
+        "stock": 50,
+        "numofReviews": 30,
+        "reviews": [
+            {
+                "name": "User1",
+                "rating": 5,
+                "comment": "The best phone I've ever owned!"
+            },
+            {
+                "name": "User2",
+                "rating": 4,
+                "comment": "Good value for the money."
+            }
+        ]
+    },
+    {
+        "name": "Organic Coffee Beans",
+        "price": 12.99,
+        "descripton": "Premium quality coffee beans for a rich brew.",
+        "ratings": 4.6,
+        "images": [
+            {
+                "public_id": "coffee789",
+                "url": "https://example.com/images/coffee_image.jpg"
+            }
+        ],
+        "category": "Food",
+        "seller": "Coffee Haven",
+        "stock": 200,
+        "numofReviews": 15,
+        "reviews": [
+            {
+                "name": "CoffeeLover1",
+                "rating": 5,
+                "comment": "Amazing flavor and aroma!"
+            },
+            {
+                "name": "BrewMaster",
+                "rating": 4,
+                "comment": "Great beans for espresso."
+            }
+        ]
+    },
+    {
+        "name": "Mirrorless Camera ABC",
+        "price": 799.99,
+        "descripton": "Capture stunning photos and videos with this mirrorless camera.",
+        "ratings": 4.9,
+        "images": [
+            {
+                "public_id": "camera123",
+                "url": "https://example.com/images/camera_image.jpg"
+            }
+        ],
+        "category": "Cameras",
+        "seller": "PhotoPro",
+        "stock": 30,
+        "numofReviews": 40,
+        "reviews": [
+            {
+                "name": "Photographer123",
+                "rating": 5,
+                "comment": "Incredible image quality!"
+            },
+            {
+                "name": "Shutterbug",
+                "rating": 4,
+                "comment": "Easy to use, great for beginners."
+            }
+        ]
+    },
+    {
+        "name": "Anti-Aging Serum",
+        "price": 29.99,
+        "descripton": "Revitalize your skin with our premium anti-aging serum.",
+        "ratings": 4.7,
+        "images": [
+            {
+                "public_id": "serum555",
+                "url": "https://example.com/images/serum_image.jpg"
+            }
+        ],
+        "category": "Health/Beauty",
+        "seller": "GlowingSkin",
+        "stock": 100,
+        "numofReviews": 25,
+        "reviews": [
+            {
+                "name": "SkincareEnthusiast",
+                "rating": 5,
+                "comment": "My skin looks younger and radiant!"
+            },
+            {
+                "name": "NaturalBeauty",
+                "rating": 4,
+                "comment": "Effective formula, worth the price."
+            }
+        ]
+    },
+    {
+        "name": "UltraBook Pro",
+        "price": 1299.99,
+        "descripton": "Slim and powerful laptop for professionals and creatives.",
+        "ratings": 4.5,
+        "images": [
+            {
+                "public_id": "laptop999",
+                "url": "https://example.com/images/laptop_image.jpg"
+            }
+        ],
+        "category": "Laptops",
+        "seller": "TechGear",
+        "stock": 20,
+        "numofReviews": 35,
+        "reviews": [
+            {
+                "name": "Designer123",
+                "rating": 5,
+                "comment": "Handles graphic design tasks like a charm!"
+            },
+            {
+                "name": "CoderExtraordinaire",
+                "rating": 4,
+                "comment": "Fast and reliable for coding projects."
+            }
+        ]
+    },
+    {
+        "name": "Soft Bedding Set",
+        "price": 89.99,
+        "descripton": "Transform your bedroom with our luxurious bedding set.",
+        "ratings": 4.6,
+        "images": [
+            {
+                "public_id": "bedding222",
+                "url": "https://example.com/images/bedding_image.jpg"
+            }
+        ],
+        "category": "Home Essentials",
+        "seller": "HomeComforts",
+        "stock": 150,
+        "numofReviews": 20,
+        "reviews": [
+            {
+                "name": "CozySleeper",
+                "rating": 5,
+                "comment": "Best sleep I've had in years!"
+            },
+            {
+                "name": "DecorFanatic",
+                "rating": 4,
+                "comment": "Adds an elegant touch to the room."
+            }
+        ]
+    },
+    {
+        "name": "Fitness Tracker X",
+        "price": 49.99,
+        "descripton": "Monitor your fitness goals with our advanced tracker.",
+        "ratings": 4.3,
+        "images": [
+            {
+                "public_id": "tracker777",
+                "url": "https://example.com/images/tracker_image.jpg"
+            }
+        ],
+        "category": "Sports",
+        "seller": "FitZone",
+        "stock": 80,
+        "numofReviews": 15,
+        "reviews": [
+            {
+                "name": "ActiveAthlete",
+                "rating": 5,
+                "comment": "Accurate tracking and user-friendly app."
+            },
+            {
+                "name": "FitnessNewbie",
+                "rating": 3,
+                "comment": "Slightly complicated to set up."
+            }
+        ]
+    },
+    {
+        "name": "Camping Tent Deluxe",
+        "price": 199.99,
+        "descripton": "Experience the great outdoors with our spacious tent.",
+        "ratings": 4.7,
+        "images": [
+            {
+                "public_id": "tent333",
+                "url": "https://example.com/images/tent_image.jpg"
+            }
+        ],
+        "category": "Outdoor",
+        "seller": "AdventureGear",
+        "stock": 25,
+        "numofReviews": 10,
+        "reviews": [
+            {
+                "name": "OutdoorExplorer",
+                "rating": 5,
+                "comment": "Easy to set up and comfortable!"
+            },
+            {
+                "name": "NatureLover",
+                "rating": 4,
+                "comment": "Kept me dry during a rainy camping trip."
+            }
+        ]
+    }
+]
