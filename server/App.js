@@ -5,6 +5,13 @@ require('dotenv').config();
 const errorMiddleware=require('./middlewares/errors')
 
 
+//handle uncaught exceptions
+process.on('uncaughtException',err =>{
+    console.log(`ERROR: ${err.message}`);
+    console.log('Shutting down server due to uncaught exception');
+    process.exit(1); 
+})
+
 
 // Setting up Middlewares
 app.use(express.json());

@@ -2,6 +2,7 @@ const Product = require('../models/product')
 const ErrorHandler = require('../utils/errorHandler');
 const mongoose=require('mongoose')
 const catchAsyncErrors=require('../middlewares/catchAsyncErrors')
+const APIFeatures = require('../utils/apiFeatures')
 
 //create new products  =>/api/v1/admin/product/new
 const createNewProduct = catchAsyncErrors(async(req,res,next) =>{
@@ -25,10 +26,14 @@ const getSingleProduct =  catchAsyncErrors(async(req,res,next) =>{
     res.status(200).json({product})
 })
 
-//get all products => /api/v1/products
+//get all products => /api/v1/products?keyword=givenstring
 const getAllProducts = catchAsyncErrors(async (req,res,next)=>{
-    const products = await Product.find({});
-    res.status(201).json({products})
+    const apiFeatures = new APIFeatures(Product.find(),req.query)
+                                .search()
+                                .filter();
+                                    
+    const products = await apiFeatures.query;
+    res.status(201).json({success:true,count:products.length,products})
 })
 
 //update a product => /api/v1/admin/product/:id
