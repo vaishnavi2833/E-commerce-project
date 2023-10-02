@@ -35,6 +35,8 @@ process.on('unhandledRejection',err =>{
 
 // Import all routes
 const router = require('./routes/products')
+const auth = require('./routes/auth')
+app.use('/api/v1/',auth)
 app.use('/api/v1/',router)
 //middleware to handle errors
 app.use(errorMiddleware)

@@ -28,12 +28,17 @@ const getSingleProduct =  catchAsyncErrors(async(req,res,next) =>{
 
 //get all products => /api/v1/products?keyword=givenstring
 const getAllProducts = catchAsyncErrors(async (req,res,next)=>{
+
+    const resultsPerPage= 4;
+    const productsCount = await Product.countDocuments();
+
     const apiFeatures = new APIFeatures(Product.find(),req.query)
                                 .search()
-                                .filter();
+                                .filter()
+                                .pagination(resultsPerPage);
                                     
     const products = await apiFeatures.query;
-    res.status(201).json({success:true,count:products.length,products})
+    res.status(201).json({success:true,productsCount,count:products.length,products})
 })
 
 //update a product => /api/v1/admin/product/:id
