@@ -4,6 +4,8 @@ const connectDB =require('./db/connect')
 require('dotenv').config();
 const errorMiddleware=require('./middlewares/errors')
 
+const cookieParser = require('cookie-parser');
+
 
 //handle uncaught exceptions
 process.on('uncaughtException',err =>{
@@ -15,6 +17,7 @@ process.on('uncaughtException',err =>{
 
 // Setting up Middlewares
 app.use(express.json());
+app.use(cookieParser());
 
 
 const port=process.env.PORT || 5000;
@@ -36,8 +39,10 @@ process.on('unhandledRejection',err =>{
 // Import all routes
 const router = require('./routes/products')
 const auth = require('./routes/auth')
+const order= require('./routes/order')
 app.use('/api/v1/',auth)
 app.use('/api/v1/',router)
+app.use('/api/v1/',order)
 //middleware to handle errors
 app.use(errorMiddleware)
 
